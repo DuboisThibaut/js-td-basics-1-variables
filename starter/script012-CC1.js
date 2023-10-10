@@ -19,5 +19,27 @@ Mark est plus élevé que celui de John ? true").
 
 BONNE CHANCE 😀
 */
+// 1.
+const poidsJohn = 80,
+      poidsMark = prompt('poids de Mark ?'),
+      tailleJohn = 180,
+      tailleMark = prompt('taille de Mark ?');
 
+//2.
+const BMIJohn = poidsJohn / (tailleJohn * tailleJohn);
+const BMIMark = poidsMark / (tailleMark * tailleMark);
+console.log(`le BMI de Mark est de ${BMIMark}`)
 
+//3.
+let BMIMarkSup;
+
+//4.
+if (BMIJohn < BMIMark) {
+    BMIMarkSup = true;
+    console.log(`Est-ce que le BMI de Mark est plus élevé que celui de John ? ${BMIMarkSup}`);
+} else if (BMIJohn > BMIMark){
+    BMIMarkSup = false;
+    console.log(`Est-ce que le BMI de Mark est plus élevé que celui de John ? ${BMIMarkSup}`);
+} else {
+    console.log('ils ont le même BMI')
+}
